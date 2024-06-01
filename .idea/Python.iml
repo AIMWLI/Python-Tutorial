@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/fundamentals/02" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/fundamentals/03" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/fundamentals/04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fundamentals/05" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="myenv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
