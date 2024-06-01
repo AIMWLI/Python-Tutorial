@@ -2,16 +2,15 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/practice/01" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/practice/02" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/practice/03" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/practice/04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fundamentals/01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fundamentals/02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fundamentals/03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fundamentals/04" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="myenv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
-    <option name="projectConfiguration" value="pytest" />
     <option name="PROJECT_TEST_RUNNER" value="pytest" />
   </component>
 </module>
