@@ -127,8 +127,35 @@ def test_subprocess():
     p2.join()
     print("------父进程执行结束-------")
 
+# -*- coding=utf-8 -*-
+from multiprocessing import Pool
+import os, time
+
+def task(name):
+    print('子进程（%s）执行task %s ...' % ( os.getpid() ,name))
+    # 休眠1秒
+    time.sleep(3)
+
+def test_pool():
+    print('父进程（%s）.' % os.getpid())
+    # 定义一个进程池，最大进程数3
+    p = Pool(3)
+    # 从0开始循环10次
+    for i in range(10):
+        # 使用非阻塞方式调用task()函数
+        p.apply_async(task, args=(i,))
+        # 阻塞方式调用task
+        # p.apply(task, args=(i,))
+    print('等待所有子进程结束...')
+    # 关闭进程池，关闭后p不再接收新的请求
+    p.close()
+    # 等待子进程结束
+    p.join()
+    print('所有子进程结束.')
+
 
 if __name__ == '__main__':
     # main()
     # test_child()
-    test_subprocess()
+    # test_subprocess()
+    test_pool()

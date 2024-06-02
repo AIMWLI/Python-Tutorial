@@ -41,3 +41,11 @@ except:
     connect.rollback()
     raise
 print(fetchone)
+# mysql like查询2种方式
+sel = "风"
+sql_like1 = "SELECT * FROM student WHERE name LIKE '%s'" % ('%%%s%%' % sel)
+# sql_like2 = "SELECT * FROM student WHERE name LIKE '%%%%%s%%%%'" % sel
+cursor.execute(sql_like1)
+# cursor.execute(sql_like2)
+data = cursor.fetchall()
+print(data)
